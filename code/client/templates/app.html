@@ -1,0 +1,8 @@
+<h1>Title {{title}}</h1>
+<button class="btn btn-success" (click)="showForm = true">
+  <span class="glyphicon glyphicon-pushpin"></span>
+  Became donator
+</button>
+<bdms-form [donator]="donator" action="Create" (submited)="create($event)"></bdms-form>
+<bdms-form *ngIf="donator" [donator]="donator" action="Save" (submited)="save($event)"></bdms-form>
+<div>{{donator.name}}</div>

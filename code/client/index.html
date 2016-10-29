@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bdms">
+<head>
+  <meta charset="utf-8">
+  <title>Blood Donation Management System</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <script src="/vendor/jquery/dist/jquery.js"></script>
+  <script src="/vendor/angular/angular.js"></script>
+  <script src="/vendor/angular-route/angular-route.js"></script>
+  <script src="/vendor/angular-resource/angular-resource.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <base href="/">
+</head>
+<body>
+  <div class="map" bdms-map data-zoom="10" data-center-lat="55.74929" data-center-lng="37.0720818"></div>
+  <ng-view></ng-view>
+
+  <script src="/js/bdms.js"></script>
+  
+  <script src="/js/directives/map.js"></script>
+  
+  <script src="/js/services/donators.js"></script>
+  <script src="/js/services/map.js"></script>
+  <script src="/js/services/socket.js"></script>
+  
+  <script src="/js/controllers/donator-manager.js"></script>
+  
+</body>
+</html>
