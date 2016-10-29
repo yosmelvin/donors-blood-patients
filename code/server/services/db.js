@@ -5,7 +5,7 @@ exports.connect = function (callback) {
 	if (mongo.DB) {
 		return mongo.DB;
 	} else {
-		const url = process.env.MONGOLAB_URI || process.env.DB || process.env.npm_package_config_db || "mongodb://localhost:27017/blooddonator";
+		const url = process.env.MONGOLAB_URI || process.env.DB || process.env.npm_package_config_db || 'mongodb://donors-blood-patients:dbp123@ds137207.mlab.com:37207/donors-blood-patients';
 		
 		if (!url)  {
 			console.error('No database url specified. Use env DB, or package.json.');
